@@ -288,7 +288,7 @@ def main(argv):
 
             start_time = time.time()*1000
             if  True:
-                payload = list(compress_data(bytes(payload)))
+                #payload = list(compress_data(bytes(payload)))
                 payload = list(encrypt_aes_gcm(bytes(payload)))
                 end_time = time.time()*1000
                 global total_encrypt_time, total_packets
